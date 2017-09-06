@@ -54,7 +54,8 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'Vdjango.urls'
 
 AUTH_USER_MODEL = 'blog.User'
-
+LOGOUT_REDIRECT_URL = '/index'
+LOGIN_REDIRECT_URL = '/index'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

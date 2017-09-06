@@ -57,7 +57,7 @@ class Article(models.Model):
         return self.title
 
     def get_absolute_url(self):
-         return reverse('blog:detail',args={'id':self.id})
+         return reverse('blog.views.detail',kwargs={'id':self.id})
 
 
 class Links(models.Model):
